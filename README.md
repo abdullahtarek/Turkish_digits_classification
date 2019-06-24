@@ -44,6 +44,7 @@ a couple of image preprocessing techniques were used while training and they are
 * random_saturation
 * random_brightness
 * random_contrast
+* Normalize image
 
 
 ## Accuracy reached 
