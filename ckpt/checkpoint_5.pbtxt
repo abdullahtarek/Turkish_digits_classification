@@ -744,7 +744,7 @@ node {
 node {
   name: "sub"
   op: "Sub"
-  input: "input_data"
+  input: "adjust_contrast/Identity_1"
   input: "sub/y"
   attr {
     key: "T"
@@ -1107,7 +1107,7 @@ node {
 node {
   name: "Conv2D"
   op: "Conv2D"
-  input: "input_data"
+  input: "truediv"
   input: "Variable/read"
   attr {
     key: "T"
@@ -8451,7 +8451,7 @@ node {
 node {
   name: "gradients/Conv2D_grad/ShapeN"
   op: "ShapeN"
-  input: "input_data"
+  input: "truediv"
   input: "Variable/read"
   attr {
     key: "N"
@@ -8528,7 +8528,7 @@ node {
 node {
   name: "gradients/Conv2D_grad/Conv2DBackpropFilter"
   op: "Conv2DBackpropFilter"
-  input: "input_data"
+  input: "truediv"
   input: "gradients/Conv2D_grad/ShapeN:1"
   input: "gradients/add_grad/tuple/control_dependency"
   attr {
