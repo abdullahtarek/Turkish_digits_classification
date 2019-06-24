@@ -18,7 +18,7 @@ pip install -r requirements.txt
 * Do one of the following   
 1. Run inference through terminal
    * run --> python inference.py PATH_TO_IMG
-   * example: python inference Dataset/2/IMG_1120.JPG
+   * example: python inference.py Dataset/2/IMG_1120.JPG
    * ouput will be the last line of output after warning messages. It will tell the predicted label for the given image   
 2. Run inference through jupyter notebook
    * open inference.ipynb 
