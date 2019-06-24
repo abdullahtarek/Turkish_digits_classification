@@ -9,6 +9,9 @@ packages used:
 * numpy
 * matplotlib
 
+You can install all the requirements with the bellow command   
+pip install -r requirements.txt
+
 ## Steps to run inference
 * clone the repository
 * cd Turkish_digits_classification  
