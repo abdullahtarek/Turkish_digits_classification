@@ -10,9 +10,9 @@ def build_model(input_x , keep_prob , training):
     else:
         input_x_aug = input_x
         
-    input_x_normalized = normalize_inputs(input_x)
+    input_x_normalized = normalize_inputs(input_x_aug)
     
-    conv1 = conv_2d(input_x ,[5,5,3,6],padding="SAME")
+    conv1 = conv_2d(input_x_normalized ,[5,5,3,6],padding="SAME")
     conv1 = dropout(conv1 , keep_prob)
     conv1 = relu(conv1)
     maxpool1 =  maxpool(conv1,kernel=[1,2,2,1])
