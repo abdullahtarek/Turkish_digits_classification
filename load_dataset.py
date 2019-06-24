@@ -6,7 +6,9 @@ from random import shuffle
 
 def load_dataset(Dataset_paths,img_size,num_channels,num_classes):
     Dataset_paths = Dataset_paths.strip()
-        
+    if Dataset_paths[-1] !="/":
+        Dataset_paths+="/"
+    Dataset_paths+="*/*"
     imgs_path = glob(Dataset_paths)
     shuffle(imgs_path)
     imgs =[]
