@@ -1,6 +1,7 @@
 from load_dataset import load_dataset, train_test_split
 from trainer import trainer
 
+
 Dataset_paths="Dataset/"
 img_size,num_channels,num_classes = 28,3,10
 train_percentage = 0.8
